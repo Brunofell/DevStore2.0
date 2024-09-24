@@ -28,6 +28,10 @@ public class SecurityConfigurations {
                         .authorizeHttpRequests(req -> {
                             req.requestMatchers("/usuarios/login").permitAll();
                             req.requestMatchers("/usuarios/cadastrar").permitAll();
+                            req.requestMatchers("/produtos/cadastrar").permitAll();
+                            req.requestMatchers("/produtos/listar").permitAll();
+                            req.requestMatchers("/produtos/atualizar").permitAll();
+                            req.requestMatchers("/produtos/**").permitAll();
                             req.requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**").permitAll();
                             req.requestMatchers("/h2-console/**", "/h2-console", "/h2-console//**").permitAll();
                             req.anyRequest().authenticated()

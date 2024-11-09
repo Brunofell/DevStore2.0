@@ -47,5 +47,12 @@ public class ProdutoController {
         repository.save(Produto);
     }
 
+    @GetMapping("/{id}")
+    public DadosListagemProduto buscarPorId(@PathVariable Long id) {
+        Produto produto = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
+        return new DadosListagemProduto(produto);
+    }
+
 
 }

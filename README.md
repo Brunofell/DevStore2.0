@@ -42,12 +42,11 @@ The project follows a **layered architecture**, with the following packages:
 - Cancel orders
 
 ### Integrations
-- **Swagger UI**: Documentation available at [`http://localhost:8083/swagger-ui/index.html`](http://localhost:8083/swagger-ui/index.html)
-- **RabbitMQ**: Asynchronous order event processing
-- **Docker**: Containerized deployment
+- **Swagger UI**
+- **RabbitMQ**
+- **Docker**
 
 ## How to Run
 ### Clone the repository
 ```bash
-git clone https://github.com/your-username/devstore-api.git
-cd devstore-api
+git clone https://github.com/brunofell/devstore-api.git
